@@ -44,8 +44,7 @@ button {
   border-radius: 4px;
 }
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding: 94px 0;
 }
 .container {
   width: 1200px;
@@ -103,10 +102,11 @@ header {
   gap: 50px;
   margin-left: 93px;
 }
-.title_section {
+.background_image_title {
   text-align: center;
-  background: #2f303a;
   padding: 200px 0;
+  background: #2f303a url('/images/Header.jpg') no-repeat center;
+  background-size: 1600px 600px;
 }
 .title_section_h1 {
   font-size: 44px;
@@ -137,6 +137,15 @@ header {
   display: flex;
   justify-content: center;
   gap: 30px;
+}
+.Our_Advantages_icons {
+  background-color: #f5f4fa;
+  height: 120px;
+  display: flex;
+  margin-bottom: 30px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
 }
 .Our_Advantages_h2 {
   position: absolute;
@@ -183,6 +192,7 @@ header {
   gap: 30px;
 }
 .our_team_h2 {
+  text-align: center;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -190,13 +200,35 @@ header {
   margin-bottom: 50px;
 }
 .OT_list {
-  background: #ffffff;
+  background: var(--letters_and_logo_color_white);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
 .OT_list > div {
   padding: 30px 0;
+}
+/* ⬇ <<social media icons>> ⬇ */
+.social-media {
+  border-radius: 50%;
+  display: flex;
+  width: 44px;
+  height: 44px;
+  justify-content: center;
+  align-items: center;
+}
+.social-media:hover,
+.social-media:focus {
+  cursor: pointer;
+  background-color: var(--link_and_button_color);
+  --color3: var(--letters_and_logo_color_white);
+  outline: none;
+}
+.social-media-box {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 16px;
 }
 .OT_list_h3 {
   font-weight: 500;
@@ -210,6 +242,30 @@ header {
   color: #757575;
   letter-spacing: 0.03em;
 }
+
+.aur_clients {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.aur_clients-li {
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  width: 170px;
+  height: 92px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.aur_clients-li:hover,
+.aur_clients-li:focus {
+  --color3: var(--link_and_button_color);
+  cursor: pointer;
+  border-color: var(--link_and_button_color);
+  outline: none;
+}
+
 footer {
   background: #2f303a;
   line-height: 24px;
@@ -235,6 +291,19 @@ address > a:hover {
   color: var(--link_and_button_color);
 }
 
+.footer_flex {
+  display: flex;
+  gap: 70px;
+}
+.join_us_h3 {
+  color: var(--letters_and_logo_color_white);
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+}
+.footer_bg {
+  background-color: #ffffff1a;
+}
 .current {
   color: var(--link_and_button_color);
 }
