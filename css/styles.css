@@ -85,17 +85,18 @@ header {
 .header_link:hover {
   color: var(--link_and_button_color);
 }
-.header_kontakt {
+.header_contact {
   display: flex;
   align-items: center;
   gap: 50px;
   margin-left: auto;
 }
+.header_contact_icon {
+  fill: currentColor;
+  vertical-align: middle;
+}
 .header_kontact_link {
   color: #757575;
-}
-.header_kontakt > a:hover {
-  color: var(--link_and_button_color);
 }
 .header_list {
   display: flex;
@@ -105,8 +106,13 @@ header {
 .background_image_title {
   text-align: center;
   padding: 200px 0;
-  background: #2f303a url('/images/Header.jpg') no-repeat center;
-  background-size: 1600px 600px;
+  background-color: #2f303a;
+  background-image: url('../images/header.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  max-width: 1600px;
+  margin: 0 auto;
 }
 .title_section_h1 {
   font-size: 44px;
@@ -216,12 +222,12 @@ header {
   height: 44px;
   justify-content: center;
   align-items: center;
+  fill: currentColor;
 }
 .social-media:hover,
 .social-media:focus {
-  cursor: pointer;
   background-color: var(--link_and_button_color);
-  --color3: var(--letters_and_logo_color_white);
+  color: var(--letters_and_logo_color_white);
   outline: none;
 }
 .social-media-box {
@@ -249,7 +255,7 @@ header {
   align-items: center;
   gap: 30px;
 }
-.aur_clients-li {
+.aur_clients-a {
   border: 1px solid #afb1b8;
   border-radius: 4px;
   width: 170px;
@@ -257,9 +263,10 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  fill: currentColor;
 }
-.aur_clients-li:hover,
-.aur_clients-li:focus {
+.aur_clients-a:hover,
+.aur_clients-a:focus {
   --color3: var(--link_and_button_color);
   cursor: pointer;
   border-color: var(--link_and_button_color);
@@ -282,6 +289,13 @@ footer {
 }
 address {
   font-style: normal;
+  margin-top: 20px;
+}
+.address_items:not(:last-child) {
+  margin-bottom: 9px;
+}
+.contact_info:hover {
+  color: var(--link_and_button_color);
 }
 .footer_a_style {
   font-size: 14px;
@@ -297,6 +311,7 @@ address > a:hover {
 }
 .join_us_h3 {
   color: var(--letters_and_logo_color_white);
+  font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
@@ -362,9 +377,11 @@ address > a:hover {
   width: 370px;
   border: 1px solid #eeeeee;
 }
-
-.Port_list:hover,
-.Port_list:focus {
+.Port_list_links {
+  display: block;
+}
+.Port_list_links:hover,
+.Port_list_links:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
   display: block;
