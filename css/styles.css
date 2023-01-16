@@ -81,6 +81,7 @@ header {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--letters_and_logo_color_black);
+  fill: currentColor;
 }
 .header_link:hover {
   color: var(--link_and_button_color);
@@ -94,6 +95,7 @@ header {
 .header_contact_icon {
   fill: currentColor;
   vertical-align: middle;
+  --color2: currentColor;
 }
 .header_kontact_link {
   color: #757575;
@@ -252,7 +254,9 @@ header {
   color: #757575;
   letter-spacing: 0.03em;
 }
-
+.fill_currentColor_svg > use {
+  fill: currentColor;
+}
 .aur_clients {
   display: flex;
   justify-content: center;
